@@ -6,7 +6,7 @@ This React application built with Vite integrates with the [Reqres API](https://
 
 **View the deployed application:**  
 [https://employwire.netlify.app/](https://employwire.netlify.app/) 
-*(Replace the link above with your actual Netlify URL)*
+
 
 ---
 
