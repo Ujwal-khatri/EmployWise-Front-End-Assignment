@@ -1,0 +1,36 @@
+.edit-user-form-container {
+    max-width: 500px;
+    margin: 130px auto;
+    padding: 20px;
+    background-color: rgb(42, 34, 65);
+    border-radius: 10px;
+    box-shadow: 0 0 10px blue;
+    button{
+      margin-left: 10%;
+      margin-top: 20px;
+      height: 40px;
+      width: 100px;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(255, 4, 88);
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+  }
+  
+  .edit-user-form-container h2 {
+    text-align: center;
+    color: rgb(255, 4, 88);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .message {
+    text-align: center;
+    color: green;
+  }
+  
