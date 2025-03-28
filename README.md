@@ -1,105 +1,71 @@
-EmployWise Front End Assignment
+# EmployWise Front End Assignment
 
-This is a React application built with Vite that interacts with the Reqres API to perform basic user management tasks. The app includes authentication, user listing with pagination, and options to edit and delete users. As a bonus, it also implements client-side search and filtering for the user list.
+This React application built with Vite integrates with the [Reqres API](https://reqres.in/) for user authentication, paginated user listing, editing, and deletion functionality. As a bonus feature, it includes client-side search and filtering to improve user experience.
 
-Table of Contents
+## 🚀 Live Demo (Netlify)
 
-Overview
+**View the deployed application:**  
+[https://your-netlify-app-url.netlify.app](https://your-netlify-app-url.netlify.app)  
+*(Replace the link above with your actual Netlify URL)*
 
-Features
+---
 
-Technologies Used
+## 📖 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+- [Assumptions & Considerations](#assumptions--considerations)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
 
-Installation
+---
 
-Running the Application
+## 🌟 Overview
 
-Deployment
+This project is developed as part of an assignment for Global Groupware Solutions Limited. It demonstrates how front-end applications interact with REST APIs by providing functionality such as authentication, user listing with pagination, and CRUD operations. Additionally, it features a client-side search for better usability.
 
-Folder Structure
+---
 
-Assumptions and Considerations
+## ✅ Features
 
-Future Enhancements
+- **User Authentication:** Log in using predefined credentials and manage authentication via tokens.
+- **Paginated User List:** Display users fetched from the Reqres API, with pagination controls.
+- **User Management:** Edit or delete users from the displayed list.
+- **Client-side Search & Filtering:** Quickly find users by searching their first or last names.
+- **Protected Routes:** Restrict access to pages that require authentication.
 
-Overview
-This project is developed as part of an assignment for Global Groupware Solutions Limited. The application leverages the Reqres API to simulate backend interactions, allowing users to log in, view a list of users, and perform edit/delete operations. Additionally, client-side search functionality has been implemented to filter users by their first or last names.
+---
 
-Features
-Authentication:
+## 🛠 Technologies
 
-Users can log in using predefined credentials (Email: eve.holt@reqres.in, Password: cityslicka).
+- **React**
+- **Vite**
+- **React Router DOM**
+- **Axios**
+- **CSS**
 
-Upon successful login, an authentication token is stored in local storage.
+---
 
-User Listing:
+## 📥 Installation
 
-Displays a paginated list of users fetched from the Reqres API.
+Clone the repository and install dependencies:
 
-Users are displayed as cards showing their avatar, first name, last name, and email.
-
-User Management:
-
-Each user card includes options to edit or delete the user.
-
-Editing a user brings up a form pre-filled with the user’s data.
-
-Deletion removes the user from the list.
-
-Client-Side Search & Filtering:
-
-A search input allows filtering the user list by first or last name.
-
-Protected Routes:
-
-Certain pages are protected using a token-based authentication check.
-
-Technologies Used
-React for building the user interface.
-
-Vite as the build tool for fast development.
-
-React Router DOM for client-side routing.
-
-Axios for making HTTP requests.
-
-CSS for styling.
-
-Installation
-Clone the Repository:
-
-bash
-Copy
+```bash
 git clone https://github.com/your-username/EmployWise-Front-End-Assignment.git
-Navigate into the Project Directory:
-
-bash
-Copy
 cd EmployWise-Front-End-Assignment
-Install Dependencies:
-
-bash
-Copy
 npm install
-Running the Application
-Start the development server with:
+```
+## 🌐 Deployment
+This project is automatically deployed to Netlify whenever changes are pushed to the repository.
 
-bash
-Copy
-npm run dev
-Then, open your browser and navigate to http://localhost:5173/.
+Netlify URL: https://your-netlify-app-url.netlify.app
 
-Deployment
-This project is hosted on Netlify. Every push to the GitHub repository triggers an automatic build and deployment.
+## 📂 Project Structure
 
-Live Demo:
-View the deployed application
-
-Make sure to update the link with your actual Netlify deployed URL.
-
-Folder Structure
-pgsql
-Copy
 EmployWise-Front-End-Assignment/
 ├── public/
 │   └── index.html
@@ -109,11 +75,11 @@ EmployWise-Front-End-Assignment/
 │   ├── components/
 │   │   ├── Auth/
 │   │   │   └── LoginForm.jsx
-│   │   ├── Users/
-│   │   │   ├── UserCard.jsx
-│   │   │   ├── UserList.jsx
-│   │   │   ├── Pagination.jsx
-│   │   │   └── EditUserForm.jsx
+│   │   └── Users/
+│   │       ├── UserCard.jsx
+│   │       ├── UserList.jsx
+│   │       ├── Pagination.jsx
+│   │       └── EditUserForm.jsx
 │   ├── pages/
 │   │   ├── LoginPage.jsx
 │   │   ├── UsersPage.jsx
@@ -128,32 +94,25 @@ EmployWise-Front-End-Assignment/
 │   └── routes.js (optional)
 ├── package.json
 └── README.md
-Assumptions and Considerations
-API Usage:
-The application uses the Reqres API for all backend interactions, so it is a front-end-only solution.
 
-Authentication:
-Token-based authentication is managed through local storage.
+## ⚠️ Assumptions & Considerations
+This app utilizes Reqres API, hence data changes are not persistent.
 
-Client-Side Search:
-The search feature filters the list of users for the current page. For larger datasets, a server-side search might be more efficient.
+Authentication tokens are stored in browser local storage.
 
-Responsive Design:
-The app has been designed to be responsive and should work well on both desktop and mobile devices.
+Client-side search only filters the current page's results.
 
-Future Enhancements
-User Registration:
-Implement a registration feature for new users.
+Responsiveness is ensured for both desktop and mobile devices.
 
-Improved Error Handling:
-Add loading indicators and more detailed error messages.
+## 💡 Future Enhancements
+User Registration: Allow new users to sign up.
 
-Testing:
-Write unit and integration tests to improve code quality and reliability.
+Enhanced Error Handling: Include detailed error handling and loading states.
 
-Backend Integration:
-If needed, integrate with a real backend for persistent data.
+Testing: Add unit and integration tests for robustness.
 
-License
+Backend Integration: Integrate with a full backend for data persistence.
+
+## 📜 License
 This project is for educational purposes and does not include a specific license.
 
