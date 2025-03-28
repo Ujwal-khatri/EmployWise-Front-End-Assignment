@@ -1,7 +1,9 @@
 EmployWise Front End Assignment
+
 This is a React application built with Vite that interacts with the Reqres API to perform basic user management tasks. The app includes authentication, user listing with pagination, and options to edit and delete users. As a bonus, it also implements client-side search and filtering for the user list.
 
 Table of Contents
+
 Overview
 
 Features
