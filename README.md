@@ -5,7 +5,7 @@ This React application built with Vite integrates with the [Reqres API](https://
 ## 🚀 Live Demo (Netlify)
 
 **View the deployed application:**  
-[[https://your-netlify-app-url.netlify.app](https://employwire.netlify.app/) 
+[https://employwire.netlify.app/](https://employwire.netlify.app/) 
 *(Replace the link above with your actual Netlify URL)*
 
 ---
@@ -62,7 +62,7 @@ npm install
 ## 🌐 Deployment
 This project is automatically deployed to Netlify whenever changes are pushed to the repository.
 
-Netlify URL: https://your-netlify-app-url.netlify.app
+Netlify URL: [https://employwire.netlify.app/](https://employwire.netlify.app/)
 
 ## 📂 Project Structure
 
